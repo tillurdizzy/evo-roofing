@@ -1,0 +1,88 @@
+
+body {
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Jaldi', sans-serif;
+	font-weight:400;}
+
+
+p {
+  font-family:  'Jaldi', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-rendering: optimizeLegibility; }
+  p.lead {
+    font-size: 1.21875rem;
+    line-height: 1.6; }
+  p aside {
+    font-size: 0.875rem;
+    font-style: italic;
+    line-height: 1.35; }
+
+input.error{
+	border:1px solid red;
+	margin:0 0 1rem 0;
+}
+
+.sub-nav{
+  margin:0 0 5px 0;
+}
+
+.tab-bar {
+  background: $topbar-green;
+  color: #FFFFFF;
+}
+
+.row{
+  max-width: 100rem;
+}
+
+.left-off-canvas-menu {
+  background: $topbar-green;
+}
+
+.right-off-canvas-menu {
+  background: $topbar-green;
+}
+
+ ul.off-canvas-list li label {
+    background: $topbar-hover;
+    border-bottom: none;
+    border-top: 1px solid #5e5e5e;
+    color: #FFFFFF;
+ }
+
+ ul.off-canvas-list li a {
+    border-bottom: 1px solid #262626;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0.66667rem;
+    transition: background 300ms ease; }
+    ul.off-canvas-list li a:hover {
+      background: $topbar-hover; }
+    ul.off-canvas-list li a:active {
+      background: $topbar-active; }
+
+ .top-bar-section .dropdown li a {
+        background: #FF0000;
+        color: #FFFFFF;
+        line-height: 2.8125rem;
+        padding: 12px 0.9375rem;
+        white-space: nowrap; }
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+        background: $topbar-green;
+        color: #FFFFFF; }
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+        background-color: #555555;
+        color: #FFFFFF;
+        background: $topbar-hover; }
+.top-bar-section .dropdown li label {
+        background: #FFFF00;
+        white-space: nowrap; }
+.top-bar-section .dropdown li .dropdown {
+        left: 100%;
+        top: 0; }
+

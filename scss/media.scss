@@ -1,0 +1,176 @@
+// max-width ----- "If [screen width] is less than or equal to [specified #], then do {...}"
+
+// min-width means "If [screen width] is greater than or equal to [specified #], then do {...}" 
+
+@media all and ( max-height: 900px ) {
+	#containerinner{
+		margin-left:2%;
+		margin-right:2%;
+	}
+	#top-bar-container{
+		margin-left:2%;
+		margin-right:2%;
+	}
+	#footer{
+		display:none;
+	}
+}
+
+@media all and ( min-width: 1701px ) {
+	#containerinner{
+		margin-left:20%;
+		margin-right:20%;
+	}
+	#top-bar-container{
+		margin-left:20%;
+		margin-right:20%;
+	}
+
+	#tagline h1{font-size:2.5em;}
+}
+
+@media all and ( max-width: 1700px ) {
+	#containerinner{
+		margin-left:15%;
+		margin-right:15%;
+	}
+	#top-bar-container{
+		margin-left:15%;
+		margin-right:15%;
+	}
+
+	#tagline h1{font-size:2.5em;}
+}
+
+@media all and ( max-width: 1360px ) {
+	#containerinner{
+		margin-left:10%;
+		margin-right:10%;
+	}
+	#top-bar-container{
+		margin-left:10%;
+		margin-right:10%;
+	}
+
+ 	#tagline h1{font-size:2em;}
+}
+
+@media all and ( max-width: 1024px ) {
+	#containerinner{
+		margin-left:5%;
+		margin-right:5%;
+		min-height:600px;
+	}
+	#top-bar-container{
+		margin-left:5%;
+		margin-right:5%;
+	}
+	#tagline h1{font-size:1.8em;}
+	#homeBoxLinks{width:100%;}
+
+	#homeBoxLinks .boxItem{
+		
+		min-height: 50px;
+		width:100%;
+		display:block;
+		text-align:center;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.contentcopy{
+		.roofSystem{
+			img{
+				clear:both;
+			}
+			button{
+				float:left;
+			}
+		}
+	}
+
+	#footer{
+		display:none;
+	}
+}
+
+@media all and ( max-width: 980px ) {
+	#tagline h1{font-size:1.5em;}
+}
+
+@media all and ( max-width: 768px ) {
+	#tagline h1{font-size:1.4em;}
+}
+
+@media all and ( max-width: 700px ) {
+	#img2{display: none;}
+	
+	#tagline h1{font-size:1.3em;}
+	.headerContact{display:none;}
+	.majorPageHeading{
+		margin-top:5px;
+		font-size:24px;
+		color:$gold-color;
+		font-weight: 600; 
+	}
+	.contentcopy{
+		h1{font-size: 1em;}
+		h2{font-size: .9em;}
+		h3{font-size: 1em;margin-left: 6px;}	
+		h4{font-size: 1.1em;}	
+		p{font-size: .8em;}
+	}
+}
+
+@media all and ( max-width: 320px ) {
+	
+}
+
+ /* PHONE LANDSCAPE VERSION */
+@media only screen and (max-width: 320px) and (orientation : landscape) {
+   
+}
+
+.videogular-container {
+	width: 720px;
+	height: 404px;
+	float:left;
+	overflow: hidden;
+	margin-bottom:30px;
+}
+
+.videogular-container-480 {
+	width: 480px;
+	height: 300px;
+	overflow: hidden;
+	margin-bottom:30px;
+}
+
+.video-thumbs{
+	height: 404px;
+	float:left;
+	margin-left:10px;
+	img{
+		cursor: hand;
+	}
+}
+ 
+@media (min-width: 1200px) {
+  .videogular-container {
+    width: 640px;
+    height: 360px;
+  }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .videogular-container {
+    width: 480px;
+    height: 270px;
+  }
+}
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+  .videogular-container {
+    width: 320px;
+    height: 180px;
+  }
+}

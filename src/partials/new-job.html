@@ -1,0 +1,17 @@
+<div>
+    <div class="majorPageHeading">New Job</div>
+    <div class="loginForm"> 
+        <form name="newJobForm" ng-submit="submitNewJobForm()" novalidate>
+            <div>
+                <label>User Name</label>
+                <input ng-class="{error:loginForm.username.$invalid&&submissionInvalid}" name="username" type="text" placeholder="User Name" ng-model="_username" required>
+               
+                <label>Job Name</label>
+                <input  ng-class="{error:loginForm.job.$invalid&&submissionInvalid}" name="job" type="text" placeholder="Job Name" ng-model="_job" required>
+                <button type="submit" class="button small">Submit</button>
+          </div>
+        </form>
+        {{_pin}}
+        <p class="attention" ng-show="submissionInvalid">Please complete both fields.</p>
+    </div> 
+</div>

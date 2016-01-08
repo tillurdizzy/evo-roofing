@@ -1,0 +1,35 @@
+<div ng-controller = "ScienceCtrl as Ctrl">
+	<div class="majorPageHeading">Flat Roof Academy</div>
+	<div class="hrule"></div>
+	<div class="academy-grid">
+		<academy-grid-item title="Overview" ng-click="Ctrl.gridClick('science.membranes')">
+			<p>Introduction to single-ply membranes.</p>
+		</academy-grid-item>
+		<academy-grid-item title="EPDM" ng-click="Ctrl.gridClick('science.epdm')">
+			<p>Where the rubber meets the roof. The best choice for your RV or travel trailer.</p>
+		</academy-grid-item>
+		<academy-grid-item title="TPO" ng-click="Ctrl.gridClick('science.tpo')">
+			<p>The best choice when you only need a roof for 10 years.</p>
+		</academy-grid-item>
+		<academy-grid-item title="PVC" ng-click="Ctrl.gridClick('science.pvc')">
+			<p>Now we are getting serious. Don't settle for less.</p>
+		</academy-grid-item>
+		<academy-grid-item title="Elvaloy" ng-click="Ctrl.gridClick('science.elvaloy')">
+			<p>PVC on steroids. The only life-of-building roofing membrane, but... not all Elvaloy is the same.</p>
+		</academy-grid-item>
+		<academy-grid-item title="Plasticizer Migration" ng-click="Ctrl.gridClick('science.plasticizer')">
+			<p>Preventing it is the key to durability and longevity.</p>
+		</academy-grid-item>
+		<academy-grid-item title="ASTM Standards" ng-click="Ctrl.gridClick('science.astm')">
+			<p>So many ways to be voided.</p>
+		</academy-grid-item>
+		<academy-grid-item title="Warranties" ng-click="Ctrl.gridClick('science.warranty')">
+			<p>So many ways to be voided.</p>
+		</academy-grid-item>
+	</div>
+
+	<div class="hrule"></div>
+	<div class="marginTop5px"></div>
+		<div ui-view class="small-12 columns"></div>
+</div>
+<div class="marginTop5px"></div>

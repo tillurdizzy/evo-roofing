@@ -1,0 +1,23 @@
+{
+  "name": "EvoRoofing",
+  "version": "0.0.0",
+  "description": "template",
+  "authors": [
+    "JDS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-sanitize": "~1.4.3",
+    "angular-animate": "~1.4.3",
+    "SHA-1": "*",
+    "angulartics": "0.17.2",
+    "angular-slick": "~0.2.1"
+  }
+}

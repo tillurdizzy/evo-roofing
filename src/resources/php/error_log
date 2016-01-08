@@ -1,0 +1,1 @@
+[28-Jul-2015 17:13:17 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'evo-danny'@'localhost' (using password: YES) in /home/stevemartintx/public_html/resources/php/putRequest.php on line 10

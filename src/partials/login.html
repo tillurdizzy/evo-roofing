@@ -1,0 +1,17 @@
+<div>
+    <div class="majorPageHeading">Customer Log In</div>
+    <div class="loginForm" > 
+        <form name="loginForm" data-ng-submit="submitLoginForm()" novalidate>
+            <div>
+                <label>User Name</label>
+                <input data-ng-class="{error:loginForm.username.$invalid&&submissionInvalid}" name="username" type="text" placeholder="User Name" ng-model="_username" required>
+               
+                <label>Pin #</label>
+                <input  data-ng-class="{error:loginForm.pin.$invalid&&submissionInvalid}" name="pin" type="text" placeholder="PIN 4 Digits" ng-model="_pin" required>
+                <button type="submit" class="button small radius">Submit</button>
+          </div>
+        </form>
+        <p class="attention" data-ng-show="!loginSuccess">Did not find a match for Username and PIN.</p>
+        <p class="attention" data-ng-show="submissionInvalid">Please complete both fields.</p>
+    </div>
+</div>
