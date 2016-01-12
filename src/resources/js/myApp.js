@@ -18,9 +18,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl:"partials/drone-special.html"
 		})
 		
-		.state('about', {
-			url: "/about",
-			templateUrl:"partials/about.html"
+		.state('history', {
+			url: "/history",
+			templateUrl:"partials/about/history.html"
+		})
+
+		.state('whyevolution', {
+			url: "/whyevolution",
+			templateUrl:"partials/about/whyevolution.html"
+		})
+		.state('safety', {
+			url: "/safety",
+			templateUrl:"partials/about/safety.html"
 		})
 
 		.state('contact', {
@@ -31,15 +40,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		
 		.state('flat', {
 			url: "/flat",
-			templateUrl:"partials/flat-roof.html",
+			templateUrl:"partials/commercial/flat-roof.html",
+			controller:"FlatCtrl"
+		})
+		.state('choose', {
+			url: "/choose",
+			templateUrl:"partials/commercial/choose-evolution.html",
 			controller:"FlatCtrl"
 		})
 
 		.state('pitched', {
 			url: "/pitched",
-			templateUrl:"partials/pitched-roof.html",
+			templateUrl:"partials/residential/pitched-roof.html",
 			controller:"PitchCtrl"
 		})
+		.state('contractor', {
+			url: "/contractor",
+			templateUrl:"partials/residential/contractor.html",
+			controller:"PitchCtrl"
+		})
+		
 
 		.state('projects', {
 			url: "/projects",
@@ -120,6 +140,41 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		.state('technology', {
 			url: "/technology",
 			templateUrl:"partials/technology.html"
+		})
+
+		.state('academyresidential', {
+			url: "/academyresidential",
+			templateUrl:"partials/residential/academy-residential.html",
+			controller:"PitchCtrl"
+		})
+
+		.state('academyresidential.shingles', {
+			url: "/residentialshingles",
+			templateUrl:"partials/residential/shingles.html"
+		})
+		.state('academyresidential.underlayments', {
+			url: "/residentialunderlayments",
+			templateUrl:"partials/residential/underlayments.html"
+		})
+		.state('academyresidential.ventilation', {
+			url: "/residentialventilation",
+			templateUrl:"partials/residential/ventilation.html"
+		})
+		.state('academyresidential.edge', {
+			url: "/residentialedge",
+			templateUrl:"partials/residential/edge-details.html"
+		})
+		.state('academyresidential.valley', {
+			url: "/residentialvalley",
+			templateUrl:"partials/residential/valley.html"
+		})
+		.state('academyresidential.flashings', {
+			url: "/residentialflashings",
+			templateUrl:"partials/residential/flashing.html"
+		})
+		.state('academyresidential.fasteners', {
+			url: "/residentialfasteners",
+			templateUrl:"partials/residential/fasteners.html"
 		})
 
 		.state('science.polyiso', {

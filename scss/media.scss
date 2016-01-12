@@ -102,6 +102,13 @@
 }
 
 @media all and ( max-width: 700px ) {
+	#containerinner{
+		margin:0;
+	}
+	.main-section{
+		margin-left:2%;
+		margin-right:2%;
+	}
 	#img2{display: none;}
 	
 	#tagline h1{font-size:1.3em;}

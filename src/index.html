@@ -8,12 +8,7 @@
   <meta name="keywords" content="roof roofing replacement repair flat houston texas">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<script src="deps.js"></script>
-  <script>
-    var w = $(document).width();
-    if (w <= 699) {
-      document.location = "mobile.html";
-    }
-  </script>
+  
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Jaldi:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="vendors/foundation-5.5.2/css/normalize.css">
@@ -44,14 +39,34 @@
         <!-- Left Nav Section -->
          <ul class="left">
             <li ng-class="{ active: isCurrentPath('/home') }"><a ui-sref="home">Home</a></li>
-            <li ng-class="{ active: isCurrentPath('/about') }"><a ui-sref="about">About Us</a></li>
-            <li ng-class="{ active: isCurrentPath('/pitched') || isCurrentPath('/flat') }" class="has-dropdown"><a ui-sref="roofsystems">Roofing Systems</a>
+            <li ng-class="{ active: isCurrentPath('/about') }" class="has-dropdown"><a ui-sref="#">About Us</a>
               <ul class="dropdown">
-                <li><a ui-sref="flat">Flat Roofs</a></li>
-                <li><a ui-sref="pitched">Pitched Roofs</a></li>
+                <li><a ui-sref="history">History</a></li>
+                <li><a ui-sref="whyevolution">Why Evolution?</a></li>
+                <li><a ui-sref="safety">Commitment to Safety</a></li>
               </ul>
             </li>
-            <li ng-class="{ active: isCurrentPath('/technology') }"><a ui-sref="technology">Technology</a></li>
+            <li ng-class="{ active: isCurrentPath('/choose') || isCurrentPath('/flat') || isCurrentPath('/science')}" class="has-dropdown"><a ui-sref="#">Commercial</a>
+              <ul class="dropdown">
+                <li><a ui-sref="choose">Choose Evolution</a></li>
+                <li><a ui-sref="flat">Flat Roof Systems</a></li>
+                <li><a ui-sref="science">Flat Roof Academy</a></li>
+              </ul>
+            </li>
+             <li ng-class="{ active: isCurrentPath('/pitched') || isCurrentPath('/contractor') || isCurrentPath('/academyresidential') }" class="has-dropdown"><a ui-sref="#">Residential</a>
+              <ul class="dropdown">
+                <li><a ui-sref="contractor">Selecting a Contractor</a></li>
+                <li><a ui-sref="pitched">Pitched Roof Systems</a></li>
+                <li><a ui-sref="academyresidential">Pitched Roof Academy</a></li>
+              </ul>
+            </li>
+            <li ng-class="{ active: isCurrentPath('/technology') }" class="has-dropdown"><a ui-sref="#">Technology</a>
+              <ul class="dropdown">
+                <li><a ui-sref="technology">Technology</a></li>
+                <li><a ui-sref="science">Flat Roof Academy</a></li>
+                <li><a ui-sref="academyresidential">Pitched Roof Academy</a></li>
+              </ul>
+            </li>
             <li ng-class="{ active: isCurrentPath('/contact') }"><a ui-sref="contact">Contact</a></li>
           </ul>
         </section>
@@ -74,12 +89,11 @@
           <p class="slogan">The more you know about roofing, the better we look.</p>
           <p class="links">
               <a ui-sref="home">Home</a>
-              <a ui-sref="about">About</a>
+              <a ui-sref="history">About</a>
               <a ui-sref="roofsystems">Roofing Systems</a>
-              <a ui-sref="technology">Technology</a>
               <a ui-sref="contact">Contact</a>
           </p>
-          <p class="copywrite">Copywrite © 2015</p>
+          <p class="copywrite">Copywrite © 2016</p>
         </div>
       </div>
     </div>
@@ -122,7 +136,12 @@
   <script src="resources/js/directives/imgWithCaption.dir.js"></script>
   <script src="partials/science/academyClasses.dir.js"></script>
 
-  
+  <script>
+    var w = $(document).width();
+    if (w <= 699) {
+      document.location = "mobile.html";
+    }
+  </script>
   
 
   <script>

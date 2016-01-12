@@ -30,6 +30,19 @@
 	}
 }
 
+.academy-mobile{
+	display:none;
+}
+
+@media all and ( max-width: 700px ) {
+	.academy-grid{
+		display:none;
+	}
+	.academy-mobile{
+		display:inline-block;
+	}
+}
+
 .up-bkg{
 	background-color:#fbf5f3;
 	cursor:pointer;
@@ -55,8 +68,6 @@
 	}
 
 	.subheading{
-		margin-left:5px;
-		margin-bottom:0;
 		font-weight:700;
 	}
 
