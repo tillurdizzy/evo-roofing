@@ -1,0 +1,47 @@
+<div>
+	<div class="majorPageHeading">Flat Roof Academy</div>
+	<horiz-rule margintop='10' marginbottom="10"></horiz-rule>
+	<!-- <div class="academy-grid">
+		<academy-grid-item title="Overview" ng-click="Ctrl.gridClick('science.membranes')">
+			<p>Introduction to single-ply membranes.</p>
+		</academy-grid-item>
+		<academy-grid-item title="EPDM" ng-click="Ctrl.gridClick('science.epdm')">
+			<p>Where the rubber meets the roof. The best choice for your RV or travel trailer.</p>
+		</academy-grid-item>
+		<academy-grid-item title="TPO" ng-click="Ctrl.gridClick('science.tpo')">
+			<p>The best choice when you only need a roof for 10 years.</p>
+		</academy-grid-item>
+		<academy-grid-item title="PVC" ng-click="Ctrl.gridClick('science.pvc')">
+			<p>Now we are getting serious. Don't settle for less.</p>
+		</academy-grid-item>
+		<academy-grid-item title="Elvaloy" ng-click="Ctrl.gridClick('science.elvaloy')">
+			<p>PVC on steroids. The only life-of-building roofing membrane, but... not all Elvaloy is the same.</p>
+		</academy-grid-item>
+		<academy-grid-item title="Plasticizer Migration" ng-click="Ctrl.gridClick('science.plasticizer')">
+			<p>Preventing it is the key to durability and longevity.</p>
+		</academy-grid-item>
+		<academy-grid-item title="ASTM Standards" ng-click="Ctrl.gridClick('science.astm')">
+			<p>So many ways to be voided.</p>
+		</academy-grid-item>
+		<academy-grid-item title="About Warranties" ng-click="Ctrl.gridClick('science.warranty')">
+			<p>So many ways to be voided.</p>
+		</academy-grid-item>
+	</div> -->
+	<div>
+		<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Select Paper</button><br>
+		<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  			<li><a ui-sref="flat.membranes">Single-ply Membranes</a></li>
+  			<li><a ui-sref="flat.epdm">EPDM</a></li>
+  			<li><a ui-sref="flat.tpo">TPO</a></li>
+  			<li><a ui-sref="flat.pvc">PVC</a></li>
+  			<li><a ui-sref="flat.elvaloy">PVC with Elvaloy</a></li>
+  			<li><a ui-sref="flat.plasticizer">Plasticizer Migration</a></li>
+  			<li><a ui-sref="flat.astm">ASTM Standards</a></li>
+  			<li><a ui-sref="flat.warranty">About Warranties</a></li>
+		</ul>
+	</div>
+
+	<horiz-rule margintop='10' marginbottom="15"></horiz-rule>
+	<div ui-view class="small-12 columns"></div>
+</div>
+<div class="marginTop5px"></div>

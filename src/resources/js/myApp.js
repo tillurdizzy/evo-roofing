@@ -17,19 +17,29 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			url: "/special",
 			templateUrl:"partials/drone-special.html"
 		})
+
+		// About
+		.state('about', {
+			url: "/about",
+			templateUrl:"partials/about/about.html"
+		})
 		
-		.state('history', {
+		.state('about.history', {
 			url: "/history",
 			templateUrl:"partials/about/history.html"
 		})
 
-		.state('whyevolution', {
-			url: "/whyevolution",
+		.state('about.why', {
+			url: "/why",
 			templateUrl:"partials/about/whyevolution.html"
 		})
-		.state('safety', {
+		.state('about.safety', {
 			url: "/safety",
 			templateUrl:"partials/about/safety.html"
+		})
+		.state('about.privacy', {
+			url: "/privacy",
+			templateUrl:"partials/about/privacy-policy.html"
 		})
 
 		.state('contact', {
@@ -37,47 +47,108 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl:"partials/contact.html",
 			controller:"ContactCtrl"
 		})
-		
-		.state('flat', {
-			url: "/flat",
-			templateUrl:"partials/commercial/flat-roof.html",
-			controller:"FlatCtrl"
+
+		// Flat Roofs
+		.state('flatsystems', {
+			url: "/flatsystems",
+			templateUrl:"partials/flat/flat-roof.html"
 		})
 		.state('choose', {
 			url: "/choose",
-			templateUrl:"partials/commercial/choose-evolution.html",
-			controller:"FlatCtrl"
+			templateUrl:"partials/flat/choose-evolution.html"
 		})
 
-		.state('pitched', {
-			url: "/pitched",
-			templateUrl:"partials/residential/pitched-roof.html",
-			controller:"PitchCtrl"
+		.state('flat', {
+			url: "/membranes",
+			templateUrl:"partials/flat/flat-roof-academy.html"
+		})
+
+		.state('flat.membranes', {
+			url: "/membranes",
+			templateUrl:"partials/flat/membrane-types.html"
+		})
+
+		.state('flat.elvaloy', {
+			url: "/elvaloy",
+			templateUrl:"partials/flat/elvaloy.html"
+		})
+		.state('flat.warranty', {
+			url: "/warranty",
+			templateUrl:"partials/flat/warranty.html"
+		})
+		.state('flat.tpo', {
+			url: "/tpo",
+			templateUrl:"partials/flat/tpo.html"
+		})
+		.state('flat.epdm', {
+			url: "/epdm",
+			templateUrl:"partials/flat/epdm.html"
+		})
+		.state('flat.plasticizer', {
+			url: "/plasticizer",
+			templateUrl:"partials/flat/plasticizer.html"
+		})
+		.state('flat.pvc', {
+			url: "/pvc",
+			templateUrl:"partials/flat/pvc.html"
+		})
+		.state('flat.astm', {
+			url: "/astm",
+			templateUrl:"partials/flat/astm.html"
+		})
+		
+		.state('flat.comparison', {
+			url: "/comparison",
+			templateUrl:"partials/flat/comparison.html"
+		})
+
+		
+
+		// Pitched Roofs
+		.state('pitchedsystems', {
+			url: "/pitchedsystems",
+			templateUrl:"partials/pitched/pitched-roof.html"
 		})
 		.state('contractor', {
 			url: "/contractor",
-			templateUrl:"partials/residential/contractor.html",
-			controller:"PitchCtrl"
+			templateUrl:"partials/pitched/contractor.html"
 		})
 		
-
-		.state('projects', {
-			url: "/projects",
-			templateUrl:"partials/projects.html",
-			controller:"ProjectsCtrl"
+		.state('pitched', {
+			url: "/pitched",
+			templateUrl:"partials/pitched/academy-residential.html"
 		})
 
-		.state('login', {
-			url: "/login",
-			templateUrl:"partials/login.html",
-			controller:"LoginCtrl"
+		.state('pitched.shingles', {
+			url: "/residentialshingles",
+			templateUrl:"partials/pitched/shingles.html"
 		})
-		.state('job', {
-			url: "/job",
-			templateUrl:"partials/new-job.html",
-			controller:"JobCtrl"
+		.state('pitched.underlayments', {
+			url: "/underlayments",
+			templateUrl:"partials/pitched/underlayments.html"
+		})
+		.state('pitched.ventilation', {
+			url: "/ventilation",
+			templateUrl:"partials/pitched/ventilation.html"
+		})
+		.state('pitched.edge', {
+			url: "/edge",
+			templateUrl:"partials/pitched/edge-details.html"
+		})
+		.state('pitched.valley', {
+			url: "/valley",
+			templateUrl:"partials/pitched/valley.html"
+		})
+		.state('pitched.flashings', {
+			url: "/flashings",
+			templateUrl:"partials/pitched/flashing.html"
+		})
+		.state('pitched.fasteners', {
+			url: "/fasteners",
+			templateUrl:"partials/pitched/fasteners.html"
 		})
 
+		// Jobs
 		.state('bellaire', {
 			url: "/bellaire",
 			templateUrl:"jobs/royal-bellaire/royal-bellaire.html",
@@ -142,92 +213,23 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl:"partials/technology.html"
 		})
 
-		.state('academyresidential', {
-			url: "/academyresidential",
-			templateUrl:"partials/residential/academy-residential.html",
-			controller:"PitchCtrl"
-		})
-
-		.state('academyresidential.shingles', {
-			url: "/residentialshingles",
-			templateUrl:"partials/residential/shingles.html"
-		})
-		.state('academyresidential.underlayments', {
-			url: "/residentialunderlayments",
-			templateUrl:"partials/residential/underlayments.html"
-		})
-		.state('academyresidential.ventilation', {
-			url: "/residentialventilation",
-			templateUrl:"partials/residential/ventilation.html"
-		})
-		.state('academyresidential.edge', {
-			url: "/residentialedge",
-			templateUrl:"partials/residential/edge-details.html"
-		})
-		.state('academyresidential.valley', {
-			url: "/residentialvalley",
-			templateUrl:"partials/residential/valley.html"
-		})
-		.state('academyresidential.flashings', {
-			url: "/residentialflashings",
-			templateUrl:"partials/residential/flashing.html"
-		})
-		.state('academyresidential.fasteners', {
-			url: "/residentialfasteners",
-			templateUrl:"partials/residential/fasteners.html"
+		.state('science', {
+			url: "/science",
+			templateUrl:"partials/science/science.html"
 		})
 
 		.state('science.polyiso', {
 			url: "/polyiso",
 			templateUrl:"partials/science/polyiso.html"
 		})
-		.state('science.elvaloy', {
-			url: "/elvaloy",
-			templateUrl:"partials/science/elvaloy.html"
-		})
 		.state('science.envelope', {
 			url: "/envelope",
 			templateUrl:"partials/science/envelope.html"
 		})
-		.state('science.warranty', {
-			url: "/warranty",
-			templateUrl:"partials/science/warranty.html"
-		})
-		.state('science.tpo', {
-			url: "/tpo",
-			templateUrl:"partials/science/tpo.html"
-		})
-		.state('science.epdm', {
-			url: "/epdm",
-			templateUrl:"partials/science/epdm.html"
-		})
-		.state('science.plasticizer', {
-			url: "/plasticizer",
-			templateUrl:"partials/science/plasticizer.html"
-		})
-		.state('science.pvc', {
-			url: "/pvc",
-			templateUrl:"partials/science/pvc.html"
-		})
-		.state('science.astm', {
-			url: "/astm",
-			templateUrl:"partials/science/astm.html"
-		})
+
 		
-		.state('science.comparison', {
-			url: "/comparison",
-			templateUrl:"partials/science/comparison.html"
-		})
 
-		.state('science.membranes', {
-			url: "/membranes",
-			templateUrl:"partials/science/membrane-types.html"
-		})
-
-		.state('science', {
-			url: "/science",
-			templateUrl:"partials/science.html"
-		})
+		
 
 		
 		

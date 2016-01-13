@@ -30,44 +30,45 @@
     </div>
  
     <div class="underHead"></div>
-    <div id="top-bar-container" ng-controller="NavCtrl" ng-show="showNav==true">
+    <div id="top-bar-container">
       <nav class="top-bar" data-topbar role="navigation" >
         <section class="top-bar-section">
           <ul class="right">
            
           </ul>
-        <!-- Left Nav Section -->
+       
          <ul class="left">
-            <li ng-class="{ active: isCurrentPath('/home') }"><a ui-sref="home">Home</a></li>
-            <li ng-class="{ active: isCurrentPath('/about') }" class="has-dropdown"><a ui-sref="#">About Us</a>
+            <li><a ui-sref="home">Home</a></li>
+            <li class="has-dropdown"><a ui-sref="#">About Us</a>
               <ul class="dropdown">
-                <li><a ui-sref="history">History</a></li>
-                <li><a ui-sref="whyevolution">Why Evolution?</a></li>
-                <li><a ui-sref="safety">Commitment to Safety</a></li>
+                <li><a ui-sref="about.history">History</a></li>
+                <li><a ui-sref="about.why">Why Evolution?</a></li>
+                <li><a ui-sref="about.safety">Commitment to Safety</a></li>
               </ul>
             </li>
-            <li ng-class="{ active: isCurrentPath('/choose') || isCurrentPath('/flat') || isCurrentPath('/science')}" class="has-dropdown"><a ui-sref="#">Commercial</a>
+            <li class="has-dropdown"><a ui-sref="#">Flat Roofs</a>
               <ul class="dropdown">
                 <li><a ui-sref="choose">Choose Evolution</a></li>
-                <li><a ui-sref="flat">Flat Roof Systems</a></li>
-                <li><a ui-sref="science">Flat Roof Academy</a></li>
+                <li><a ui-sref="flatsystems">Flat Roof Systems</a></li>
+                <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
               </ul>
             </li>
-             <li ng-class="{ active: isCurrentPath('/pitched') || isCurrentPath('/contractor') || isCurrentPath('/academyresidential') }" class="has-dropdown"><a ui-sref="#">Residential</a>
+             <li class="has-dropdown"><a ui-sref="#">Pitched Roofs</a>
               <ul class="dropdown">
                 <li><a ui-sref="contractor">Selecting a Contractor</a></li>
-                <li><a ui-sref="pitched">Pitched Roof Systems</a></li>
-                <li><a ui-sref="academyresidential">Pitched Roof Academy</a></li>
+                <li><a ui-sref="pitchedsystems">Pitched Roof Systems</a></li>
+                <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
               </ul>
             </li>
-            <li ng-class="{ active: isCurrentPath('/technology') }" class="has-dropdown"><a ui-sref="#">Technology</a>
+            <li class="has-dropdown"><a ui-sref="#">Technology</a>
               <ul class="dropdown">
                 <li><a ui-sref="technology">Technology</a></li>
-                <li><a ui-sref="science">Flat Roof Academy</a></li>
-                <li><a ui-sref="academyresidential">Pitched Roof Academy</a></li>
+                <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
+                <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
+                <li><a ui-sref="science.polyiso">The Science of Roofing</a></li>
               </ul>
             </li>
-            <li ng-class="{ active: isCurrentPath('/contact') }"><a ui-sref="contact">Contact</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
           </ul>
         </section>
       </nav>
@@ -75,9 +76,10 @@
 
     <div ui-view id="containerinner">
     <div style="color:#FFFFFF;">
-      <h1>Evolution Roofing Systems, Houston, Texas</h1>
+      <h1 style="color:#FFFFFF;">Evolution Roofing Systems, Houston, Texas</h1>
       <p>Company founder and CEO Steve Martin was chosen by the City of Houston to participate in rewriting the building codes for the city to incorporate stricter energy efficiency standards.</p>
       <p>Evolution Roofing Systems specializes in energy efficient cool roofs and green roofs.</p>
+      <p>Life of building Elvaloy PVC membrane flat cool roof.</p>
       <p>Using an infrared camera to locate areas of moisture intrusion and wet insulation is quick, accurate and inexpensive compared to other methods.  Since IR imaging allows problem areas to be located before severe symptoms appear, significant damage can be avoided by catching and addressing issues as they develop.  Thermal imaging can also be performed from an elevated vantage point, allowing an even greater area to be examined at once, and eliminating the need to lug equipment up and down various roof elevations.</p>
     </div>
      
@@ -89,11 +91,12 @@
           <p class="slogan">The more you know about roofing, the better we look.</p>
           <p class="links">
               <a ui-sref="home">Home</a>
-              <a ui-sref="history">About</a>
-              <a ui-sref="roofsystems">Roofing Systems</a>
+              <a ui-sref="pitched">Residential</a>
+              <a ui-sref="flat">Commercial</a>
               <a ui-sref="contact">Contact</a>
+              <a ui-sref="about.privacy">Privacy Policy</a>
           </p>
-          <p class="copywrite">Copywrite © 2016</p>
+          <p class="copywrite">Copywrite 2016 Evolution Roofing. All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -107,17 +110,13 @@
   <script src="resources/js/myApp.js"></script>
   <!--Partial Controlles-->
   <script src="resources/js/controllers/flat-roof.ctrl.js"></script>
-  <script src="resources/js/controllers/pitched-roof.ctrl.js"></script>
   <script src="resources/js/controllers/home.ctrl.js"></script>
-  <script src="resources/js/controllers/nav.ctrl.js"></script>
-  <script src="resources/js/controllers/projects.ctrl.js"></script>
   <script src="resources/js/controllers/header.ctrl.js"></script>
   <script src="resources/js/controllers/login.ctrl.js"></script>
   <script src="resources/js/controllers/login.temp.js"></script>
   <script src="resources/js/controllers/job.ctrl.js"></script>
   <script src="resources/js/controllers/contact.ctrl.js"></script>
   <script src="resources/js/controllers/drone.ctrl.js"></script>
-  <script src="resources/js/controllers/science.ctrl.js"></script>
   
   <!--Jobs-->
   <script src="jobs/customers.jobs.ctrl.js"></script>
@@ -134,7 +133,7 @@
   <script src="resources/js/directives/gridImageBtn.dir.js"></script>
   <script src="resources/js/directives/homePageItem.dir.js"></script>
   <script src="resources/js/directives/imgWithCaption.dir.js"></script>
-  <script src="partials/science/academyClasses.dir.js"></script>
+  <script src="resources/js/directives/hrule.dir.js"></script>
 
   <script>
     var w = $(document).width();
