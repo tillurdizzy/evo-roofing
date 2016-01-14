@@ -195,27 +195,12 @@ body #container{
 	height:0;
 }
 
-#homeBoxLinks{
-	width:100%;
-	overflow:auto;
-	display:block;
-}
-
-#homeBoxLinks .boxItem{
-	padding-top:5px;
-	min-height: 200px;
-	width:33.3%;
-	float:left;
-	display:inline;
-	text-align:center;
-	padding-left:30px;
-	padding-right:30px;
-	h3{
-		font-size:22px;
-		text-weight:bold;
-		color:$dark-blue-color;
+.home-full-image{
+	img{
+		min-width:100%;
 	}
 }
+
 
 .captionTitle{
 	font-size:.8em;
@@ -510,6 +495,47 @@ table, th, td {
 .customer-page{
 	a:link{
 		font-size: 2em;
+	}
+}
+
+.home-grid{
+	width:100%;
+	display:flex;
+	align-content:space-between;
+	flex:1;
+	.homeGridItem{
+		background-color:#fbf5f3;
+		width:50%;
+		padding:10px;
+		margin:5px;
+		p{
+			margin:0 4px;
+			font-size: 1em;
+		}
+
+		h2{
+			color:#fff;
+			font-size: 1.2em;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		.titleArea{
+			background-color:#C2704F;
+			height:35px;
+			width:100%;
+			margin-bottom: 10px;
+			h2{
+				line-height: 35px;
+				text-align: center;
+				margin:3px 0 0 3px;
+				color:#fefefe;
+				font-size: 1.2em;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+			}
+		}
 	}
 }
 @import 'media';

@@ -4,13 +4,11 @@ var app = angular.module('MyApp', ['ui.router','ngAnimate','slick','ngSanitize',
 
 app.config(function($stateProvider, $urlRouterProvider) {
  	
- 	$urlRouterProvider.otherwise("/home");
+ 	$urlRouterProvider.otherwise("/");
   	
 	$stateProvider
 		.state('home', {
-			url: "/home",
-			templateUrl:"partials/home.html",
-			controller:"HomeCtrl"
+			url: "/"
 		})
 
 		.state('special', {
