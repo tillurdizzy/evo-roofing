@@ -1,141 +1,122 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<title>Evolution Roofing</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<script src="deps.js"></script>
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Jaldi:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="vendors/foundation-5.5.2/css/normalize.css">
-	<link rel="stylesheet" href="vendors/foundation-5.5.2/css/foundation.css">
-  <link rel="stylesheet" href="resources/css/styles.css">
-	<link rel="stylesheet" type="text/css" href="vendors/slick-css/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="vendors/slick-css/slick/slick-theme.css"/>
-</head>
-
-<body>
-	<div id="container" data-ng-app="MyApp">
-    <div id="header" role="banner" ng-click="showHome()" ng-controller="HeaderCtrl">
-      <div class="headerLogo">
-        <object  type="image/svg+xml" data="resources/img/WhiteEvolutionLogo.svg" width="200"></object>
-      </div>
-    </div>
- 
-  <div class="underHead"></div>
-
-  <div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
-      <nav class="tab-bar">
-        <section class="left-small">
-          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-        </section>
-      </nav>
-
-      <aside class="left-off-canvas-menu">
-        <ul class="off-canvas-list">
-          <li><label>MENU</label></li>
-          <li><a ui-sref="home">Home</a></li>
-          <li><label>About Us</label></li>
-          <li><a ui-sref="about.history">History</a></li>
-          <li><a ui-sref="about.why">Why Evolution</a></li>
-          <li><a ui-sref="about.safety">Safety</a></li>
-          <li><label>Flat Roof Systems</label></li>
-          <li><a ui-sref="choose">Choose Evolution</a></li>
-          <li><a ui-sref="flatsystems">Flat Roof Systems</a></li>
-          <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
-          <li><label>Pitched Roof Systems</label></li>
-          <li><a ui-sref="contractor">Selecting a Contractor</a></li>
-          <li><a ui-sref="pitchedsystems">Pitched Roof Systems</a></li>
-          <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
-          <li><label>Reference</label></li>
-          <li><a ui-sref="science.polyiso">Pitched Roof Academy</a></li>
-          <li><a ui-sref="technology">Technology</a></li>
-          <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
-          <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
-          <li><label>Contact</label></li>
-          <li><a ui-sref="contact">Contact</a></li>
-         
-        </ul>
-      </aside>
-
-      <section class="main-section">
-        <div ui-view id="containerinner">
-          <div id="tagline"><h1>Integrity, Quality, Value and Service since 1985</h1></div>
-      <div class="clearfix"></div>
-      <div class="home-full-width">
-        <img ng-src="resources/img/West-Liberty.jpg" alt="">
-      </div>
-    
-      <div id="tagline"><h1>Evolution Roofing Systems, Houston, Texas</h1></div>
-      <div class="home-grid">
-        <div class="homeGridItem" >
-          <div class="titleArea">
-            <h2>Commercial (flat) Roofs</h2>
-          </div>
-           <p>We helped establish the Houston Area guidelines for cool, efficient flat commercial roofs. Since our beginning, Evolution Roofing has provided building owners with quality roofing products, professional installation and prompt service.</p>
+    <head>
+        <title>Evolution Roofing</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="deps.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Jaldi:400,700' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="vendors/foundation-5.5.2/css/normalize.css"/>
+        <link rel="stylesheet" href="vendors/foundation-5.5.2/css/foundation.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="resources/css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="vendors/slick-css/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="vendors/slick-css/slick/slick-theme.css"/>
+    </head>
+    <body>
+        <div id="container" data-ng-app="MyApp">
+            <div id="header" role="banner" ng-click="showHome()" ng-controller="HeaderCtrl">
+                <div class="headerLogo">
+                    <object  type="image/svg+xml" data="resources/img/WhiteEvolutionLogo.svg" width="200"></object>
+                </div>
+            </div>
+            <div class="underHead"></div>
+            <div class="off-canvas-wrap" data-offcanvas>
+                <div class="inner-wrap">
+                    <nav class="tab-bar">
+                        <section class="left-small">
+                            <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+                        </section>
+                    </nav>
+                    <aside class="left-off-canvas-menu">
+                        <ul class="off-canvas-list">
+                            <li><label>MENU</label></li>
+                            <li><a ui-sref="home">Home</a></li>
+                            <li><label>About Us</label></li>
+                            <li><a ui-sref="about.history">History</a></li>
+                            <li><a ui-sref="about.why">Why Evolution</a></li>
+                            <li><a ui-sref="about.safety">Safety</a></li>
+                            <li><label>Flat Roof Systems</label></li>
+                            <li><a ui-sref="choose">Choose Evolution</a></li>
+                            <li><a ui-sref="flatsystems">Flat Roof Systems</a></li>
+                            <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
+                            <li><label>Pitched Roof Systems</label></li>
+                            <li><a ui-sref="contractor">Selecting a Contractor</a></li>
+                            <li><a ui-sref="pitchedsystems">Pitched Roof Systems</a></li>
+                            <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
+                            <li><label>Reference</label></li>
+                            <li><a ui-sref="science.polyiso">Pitched Roof Academy</a></li>
+                            <li><a ui-sref="technology">Technology</a></li>
+                            <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
+                            <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
+                            <li><label>Contact</label></li>
+                            <li><a ui-sref="contact">Contact</a></li>
+                        </ul>
+                    </aside>
+                    <section class="main-section">
+                        <div ui-view id="containerinner">
+                            <div id="tagline"><h1>Integrity, Quality, Value and Service since 1985</h1></div>
+                            <div class="clearfix"></div>
+                            <div class="home-full-width">
+                                <img ng-src="resources/img/West-Liberty.jpg" alt="">
+                            </div>
+                            <div id="tagline"><h1>Evolution Roofing Systems, Houston, Texas</h1></div>
+                            <div class="home-grid">
+                                <div class="homeGridItem" >
+                                    <div class="titleArea">
+                                        <h2>Commercial (flat) Roofs</h2>
+                                    </div>
+                                    <p>We helped establish the Houston Area guidelines for cool, efficient flat commercial roofs. Since our beginning, Evolution Roofing has provided building owners with quality roofing products, professional installation and prompt service.</p>
+                                </div>
+                                <div class="homeGridItem" >
+                                    <div class="titleArea">
+                                        <h2>Residential (pitched) Roofs</h2>
+                                    </div>
+                                    <p>Making the right choice for your residential roofing contractor is essential to your peace of mind. We ensure that our work is done to your satisfaction, in a timely manner, and at a fair price. Evolution Roofing has been meeting these requirements for over 25 years.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <a class="exit-off-canvas"></a>
+                </div>
+            </div>
         </div>
-
-         <div class="homeGridItem" >
-          <div class="titleArea">
-            <h2>Residential (pitched) Roofs</h2>
-          </div>
-          <p>Making the right choice for your residential roofing contractor is essential to your peace of mind. We ensure that our work is done to your satisfaction, in a timely manner, and at a fair price. Evolution Roofing has been meeting these requirements for over 25 years.</p>
-        </div>
-      </div>
-
-          
-        </div>
-      </section>
-
-      <a class="exit-off-canvas"></a>
-    </div>
-  </div>
-
-	</div>
-
-  <!--Vendors not included in dep.js file-->
-  <script src="vendors/foundation-5.5.2/js/foundation.min.js"></script>
-  <script src="vendors/foundation-5.5.2/js/foundation/foundation.clearing.js"></script>
-  <script src="vendors/foundation-5.5.2/js/foundation/foundation.offcanvas.js"></script>
-   <!--Custom JS-->
-  <script src="resources/js/myApp.js"></script>
-  <!--Partial Controlles-->
-  <script src="resources/js/controllers/flat-roof.ctrl.js"></script>
- 
-  <script src="resources/js/controllers/home.ctrl.js"></script>
-  
-  <script src="resources/js/controllers/projects.ctrl.js"></script>
-  <script src="resources/js/controllers/header.ctrl.js"></script>
-  <script src="resources/js/controllers/contact.ctrl.js"></script>
-  <script src="resources/js/controllers/login.ctrl.js"></script>
-  <script src="resources/js/controllers/job.ctrl.js"></script>
-  <script src="resources/js/controllers/drone.ctrl.js"></script>
-  
-  <!--Jobs-->
-  <script src="jobs/customers.jobs.ctrl.js"></script>
-  <script src="jobs/royal-bellaire/royal-bellaire.ctrl.js"></script>
-  <script src="jobs/sovereign/sovereign.ctrl.js?v=2"></script>
-  <script src="jobs/townpark/townpark.ctrl.js?v=2"></script>
-  <!--Services-->
-  <script src="resources/js/services/data.srvc.js"></script>
-
-  <!--Directives-->
-  <script src="resources/js/directives/gridImageBtn.dir.js"></script>
-  <script src="resources/js/directives/homePageItem.dir.js"></script>
-  <script src="resources/js/directives/hrule.dir.js"></script>
-
- <script>
-    var w = $(document).width();
-    if (w > 900) {
-      document.location = "index.html";
-    }
-  </script>
-
-  <script>
-    $(document).foundation();
-  </script>
-</body>
+        <!--Vendors not included in dep.js file-->
+        <script src="vendors/foundation-5.5.2/js/foundation.min.js"></script>
+        <script src="vendors/foundation-5.5.2/js/foundation/foundation.clearing.js"></script>
+        <script src="vendors/foundation-5.5.2/js/foundation/foundation.offcanvas.js"></script>
+        <!--Custom JS-->
+        <script src="resources/js/myApp.js"></script>
+        <!--Partial Controlles-->
+        <script src="resources/js/controllers/flat-roof.ctrl.js"></script>
+        <script src="resources/js/controllers/home.ctrl.js"></script>
+        <script src="resources/js/controllers/projects.ctrl.js"></script>
+        <script src="resources/js/controllers/header.ctrl.js"></script>
+        <script src="resources/js/controllers/contact.ctrl.js"></script>
+        <script src="resources/js/controllers/login.ctrl.js"></script>
+        <script src="resources/js/controllers/job.ctrl.js"></script>
+        <script src="resources/js/controllers/drone.ctrl.js"></script>
+        <!--Jobs-->
+        <script src="jobs/customers.jobs.ctrl.js"></script>
+        <script src="jobs/royal-bellaire/royal-bellaire.ctrl.js"></script>
+        <script src="jobs/sovereign/sovereign.ctrl.js?v=2"></script>
+        <script src="jobs/townpark/townpark.ctrl.js?v=2"></script>
+        <!--Services-->
+        <script src="resources/js/services/data.srvc.js"></script>
+        <!--Directives-->
+        <script src="resources/js/directives/gridImageBtn.dir.js"></script>
+        <script src="resources/js/directives/homePageItem.dir.js"></script>
+        <script src="resources/js/directives/hrule.dir.js"></script>
+        <script>
+                            var w = $(document).width();
+                            if (w > 900) {
+                            document.location = "index.html";
+                            }
+        </script>
+        <script>
+                            $(document).foundation();
+        </script>
+    </body>
 </html>

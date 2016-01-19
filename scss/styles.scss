@@ -171,6 +171,11 @@ body #container{
 	color:$gold-color;
 }
 
+.center-horiz{
+	display:flex;
+	justify-content:center;
+}
+
 .singleLine{
 	margin:2px 0;
 }
@@ -539,5 +544,6 @@ table, th, td {
 	}
 }
 @import 'media';
+@import 'navigation';
 @import 'projects';
 @import 'science';
