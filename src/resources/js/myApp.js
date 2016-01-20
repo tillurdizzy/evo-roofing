@@ -55,6 +55,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			url: "/choose",
 			templateUrl:"partials/flat/choose-evolution.html"
 		})
+		.state('edgedetails', {
+			url: "/edgedetails",
+			templateUrl:"partials/flat/flat-edge-details.html"
+		})
 
 		.state('flat', {
 			url: "/membranes",
@@ -105,7 +109,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		// Pitched Roofs
 		.state('pitchedsystems', {
 			url: "/pitchedsystems",
-			templateUrl:"partials/pitched/pitched-roof.html"
+			templateUrl:"partials/pitched/pitched-roof-2.html"
 		})
 		.state('contractor', {
 			url: "/contractor",
@@ -118,8 +122,28 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		})
 
 		.state('pitched.shingles', {
-			url: "/residentialshingles",
+			url: "/compositionshingles",
 			templateUrl:"partials/pitched/shingles.html"
+		})
+		.state('pitched.metal', {
+			url: "/metal",
+			templateUrl:"partials/pitched/metal.html"
+		})
+		.state('pitched.ceramic', {
+			url: "/ceramic",
+			templateUrl:"partials/pitched/ceramic.html"
+		})
+		.state('pitched.concrete', {
+			url: "/concrete",
+			templateUrl:"partials/pitched/concrete.html"
+		})
+		.state('pitched.slate', {
+			url: "/slate",
+			templateUrl:"partials/pitched/slate.html"
+		})
+		.state('pitched.synthetic', {
+			url: "/synthetic",
+			templateUrl:"partials/pitched/synthetic.html"
 		})
 		.state('pitched.underlayments', {
 			url: "/underlayments",

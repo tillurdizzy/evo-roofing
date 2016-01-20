@@ -503,6 +503,52 @@ table, th, td {
 	}
 }
 
+.systems-grid{
+	.systems-grid-item{
+		display:flex;
+		flex-direction: column;
+		margin-bottom:10px;
+		.grid-content{
+			display:flex;
+			img{
+				width:345px;
+				height:180px;
+				margin-right:10px;
+			}
+
+			h3{
+				margin:0 0 1em 0;
+			}
+		}
+
+		.grid-content-edge{
+			display:flex;
+			img{
+				
+				margin-right:10px;
+			}
+			h3{
+				margin:0 0 1em 0;
+			}
+		}
+	}
+	.title-bar{
+		background-color:#C2704F;
+		height:35px;
+		width:100%;
+		margin-bottom: 10px;
+		h2{
+			
+			text-align: center;
+			
+			color:#fefefe;
+			font-size: 1.2em;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+		}
+	}
+}
+
 .home-grid{
 	width:100%;
 	display:flex;

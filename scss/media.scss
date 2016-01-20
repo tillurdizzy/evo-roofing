@@ -137,6 +137,40 @@
 			margin: 10px 0 10px 0;
 		}
 	}
+
+	.systems-grid{
+		margin:0 1em 0 1em;
+		.systems-grid-item{
+			.grid-content{
+				display:flex;
+				flex-direction: column;
+				img{
+					min-width:100%;
+					height:auto;
+					margin-bottom:10px;
+				}
+
+				h3{
+					margin:0 0 .5em 0;
+				}
+			}
+
+			.grid-content-edge{
+				display:flex;
+				flex-direction: column;
+				img{
+					min-width:100%;
+					height:auto;
+					margin-bottom:10px;
+				}
+
+				h3{
+					margin:0 0 .5em 0;
+				}
+			}
+		}
+	
+	}
 }
 
 @media all and ( max-width: 320px ) {
