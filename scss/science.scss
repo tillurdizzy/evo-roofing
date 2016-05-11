@@ -1,33 +1,11 @@
 
 
-.academy-grid{
-	width:100%;
-	padding-top:10px;
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
+.academy-mobile{
+
 }
 
-.academy-grid-item{
-	color:#000000;
-	width:250px;
-	height:80px;
-	margin-bottom:10px;
-	border:1px solid #000000;
-	padding:2px 10px;
+@media all and ( max-width: 700px ) {
 	
-	p{
-		font-size: .9em;
-		line-height:1em;
-	}
-
-	h3{
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 600; 
-		font-size: 1.1em;
-		margin:0 0 .3em 0;
-		line-height:1.1em;
-	}
 }
 
 .up-bkg{
@@ -40,8 +18,7 @@
 	cursor:pointer;
 }
 
-.science-paper{
-	
+.science-paper{	
 	p{
 		
 	}
@@ -55,24 +32,22 @@
 	}
 
 	.subheading{
-		margin-left:5px;
-		margin-bottom:0;
 		font-weight:700;
 	}
 
 	.title-area{
-			background-color:#C2704F;
-			height:35px;
-			width:100%;
-			margin-bottom: 10px;
-			h2{
-				line-height: 35px;
-				text-align: center;
-				margin:3px 0 0 3px;
-				color:#fefefe;
-				font-size: 1.2em;
-				font-family: 'Open Sans', sans-serif;
-				font-weight: 600;
-			}
+		background-color:#C2704F;
+		height:35px;
+		width:100%;
+		margin-bottom: 10px;
+		h2{
+			line-height: 35px;
+			text-align: center;
+			margin:3px 0 0 3px;
+			color:#fefefe;
+			font-size: 1.2em;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
 		}
+	}
 }

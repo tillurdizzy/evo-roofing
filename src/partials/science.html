@@ -23,13 +23,26 @@
 		<academy-grid-item title="ASTM Standards" ng-click="Ctrl.gridClick('science.astm')">
 			<p>So many ways to be voided.</p>
 		</academy-grid-item>
-		<academy-grid-item title="Warranties" ng-click="Ctrl.gridClick('science.warranty')">
+		<academy-grid-item title="About Warranties" ng-click="Ctrl.gridClick('science.warranty')">
 			<p>So many ways to be voided.</p>
 		</academy-grid-item>
+	</div>
+	<div class="academy-mobile">
+		<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Select Paper</button><br>
+		<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  			<li><a ui-sref="science.membranes">Single-ply Membranes</a></li>
+  			<li><a ui-sref="science.epdm">EPDM</a></li>
+  			<li><a ui-sref="science.tpo">TPO</a></li>
+  			<li><a ui-sref="science.pvc">PVC</a></li>
+  			<li><a ui-sref="science.elvaloy">PVC with Elvaloy</a></li>
+  			<li><a ui-sref="science.plasticizer">Plasticizer Migration</a></li>
+  			<li><a ui-sref="science.astm">ASTM Standards</a></li>
+  			<li><a ui-sref="science.warranty">About Warranties</a></li>
+		</ul>
 	</div>
 
 	<div class="hrule"></div>
 	<div class="marginTop5px"></div>
-		<div ui-view class="small-12 columns"></div>
+	<div ui-view class="small-12 columns"></div>
 </div>
 <div class="marginTop5px"></div>

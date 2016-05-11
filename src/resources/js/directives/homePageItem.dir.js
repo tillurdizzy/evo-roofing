@@ -5,7 +5,7 @@ app.directive('homePageItem', function () {
         title:'@',
         imgsrc:'@'
       },
-      templateUrl:'resources/js/directives/templates/homeItemTemplate.html',
+      templateUrl:'resources/js/directives/templates/home-grid.tpl.html',
       link: function(scope, elm, attrs) {
       }
     }

@@ -1,142 +1,167 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<title>Evolution Roofing Systems - Houston, Texas</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
-  <meta name="description" content="Residential and commercial roof repair and replacement serving Houston, Tx.  Ask about our Life of Building flat roof system.">
-  <meta name="keywords" content="roof roofing replacement repair flat houston texas">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<script src="deps.js"></script>
-  <script>
-    var w = $(document).width();
-    if (w <= 699) {
-      document.location = "mobile.html";
-    }
-  </script>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Jaldi:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="vendors/foundation-5.5.2/css/normalize.css">
-	<link rel="stylesheet" href="vendors/foundation-5.5.2/css/foundation.css">
-  <link rel="stylesheet" href="resources/css/styles.css">
-<!-- 	<link rel="stylesheet" type="text/css" href="vendors/slick-css/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="vendors/slick-css/slick/slick-theme.css"/> -->
-</head>
+    <head>
+        <title>Evolution Roofing Systems - Houston, Texas</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+        <meta name="description" content="Residential and commercial roof repair and replacement serving Houston, Tx.  Ask about our Life of Building flat roof system.">
+        <meta name="keywords" content="roof roofing replacement repair flat houston texas">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="deps.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Jaldi:400,700' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="vendors/foundation-5.5.2/css/normalize.css"/>
+        <link rel="stylesheet" href="vendors/foundation-5.5.2/css/foundation.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="resources/css/styles.css"/>
 
-<body>
-	<div id="container" data-ng-app="MyApp">
-    <div id="header" role="banner" ng-click="showHome()" ng-controller="HeaderCtrl">
-      <div class="headerLogo">
-        <object  type="image/svg+xml" data="resources/img/WhiteEvolutionLogo.svg" width="200"></object>
-      </div>
-      <div class="headerContact">
-         <img id="headerRight"  src="resources/img/CallUsIcon.png" alt="1-713-729-7663">
-      </div>
-    </div>
- 
-    <div class="underHead"></div>
-    <div id="top-bar-container" ng-controller="NavCtrl" ng-show="showNav==true">
-      <nav class="top-bar" data-topbar role="navigation" >
-        <section class="top-bar-section">
-          <ul class="right">
-           
-          </ul>
-        <!-- Left Nav Section -->
-         <ul class="left">
-            <li ng-class="{ active: isCurrentPath('/home') }"><a ui-sref="home">Home</a></li>
-            <li ng-class="{ active: isCurrentPath('/about') }"><a ui-sref="about">About Us</a></li>
-            <li ng-class="{ active: isCurrentPath('/pitched') || isCurrentPath('/flat') }" class="has-dropdown"><a ui-sref="roofsystems">Roofing Systems</a>
-              <ul class="dropdown">
-                <li><a ui-sref="flat">Flat Roofs</a></li>
-                <li><a ui-sref="pitched">Pitched Roofs</a></li>
-                <li><a ui-sref="science">Science of Roofing</a></li>
-              </ul>
-            </li>
-            <li ng-class="{ active: isCurrentPath('/technology') }"><a ui-sref="technology">Technology</a></li>
-            <li ng-class="{ active: isCurrentPath('/contact') }"><a ui-sref="contact">Contact</a></li>
-          </ul>
-        </section>
-      </nav>
-    </div>
-
-    <div ui-view id="containerinner">
-    <div style="color:#FFFFFF;">
-      <h1>Evolution Roofing Systems, Houston, Texas</h1>
-      <p>Company founder and CEO Steve Martin was chosen by the City of Houston to participate in rewriting the building codes for the city to incorporate stricter energy efficiency standards.</p>
-      <p>Evolution Roofing Systems specializes in energy efficient cool roofs and green roofs.</p>
-      <p>Using an infrared camera to locate areas of moisture intrusion and wet insulation is quick, accurate and inexpensive compared to other methods.  Since IR imaging allows problem areas to be located before severe symptoms appear, significant damage can be avoided by catching and addressing issues as they develop.  Thermal imaging can also be performed from an elevated vantage point, allowing an even greater area to be examined at once, and eliminating the need to lug equipment up and down various roof elevations.</p>
-    </div>
-     
-    </div>
-
-    <div class="newfooter">
-      <div class="row">
-        <div class="small-12 columns">
-          <p class="slogan">The more you know about roofing, the better we look.</p>
-          <p class="links">
-              <a ui-sref="home">Home</a>
-              <a ui-sref="about">About</a>
-              <a ui-sref="roofsystems">Roofing Systems</a>
-              <a ui-sref="technology">Technology</a>
-              <a ui-sref="contact">Contact</a>
-          </p>
-          <p class="copywrite">Copywrite © 2015</p>
+    </head>
+    <body>
+        <div id="container" data-ng-app="MyApp">
+            <div id="header" role="banner" ng-click="showHome()" ng-controller="HeaderCtrl">
+                <div class="headerLogo">
+                    <object  type="image/svg+xml" data="resources/img/WhiteEvolutionLogo.svg" width="200"></object>
+                </div>
+                <div class="headerContact">
+                    <img id="headerRight"  src="resources/img/CallUsIcon.png" alt="1-713-729-7663">
+                </div>
+            </div>
+            <div class="underHead"></div>
+            <div id="top-bar-container">
+                <nav class="top-bar" data-topbar role="navigation" >
+                    <section class="top-bar-section">
+                        <ul class="right">
+                        </ul>
+                        <ul class="left">
+                            <li><a ui-sref="home">Home</a></li>
+                            <li class="has-dropdown"><a ui-sref="#">About Us</a>
+                                <ul class="dropdown">
+                                    <li><a ui-sref="about.history">History</a></li>
+                                    <li><a ui-sref="about.why">Why Evolution?</a></li>
+                                    <li><a ui-sref="about.safety">Commitment to Safety</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a ui-sref="#">Flat Roofs</a>
+                                <ul class="dropdown">
+                                    <li><a ui-sref="choose">Choose Evolution</a></li>
+                                    <li><a ui-sref="flatsystems">Flat Roof Systems</a></li>
+                                    <li><a ui-sref="edgedetails">Edge Details</a></li>
+                                    <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a ui-sref="#">Pitched Roofs</a>
+                                <ul class="dropdown">
+                                    <li><a ui-sref="contractor">Selecting a Contractor</a></li>
+                                    <li><a ui-sref="pitchedsystems">Pitched Roof Systems</a></li>
+                                    <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a ui-sref="#">Technology</a>
+                                <ul class="dropdown">
+                                    <li><a ui-sref="technology">Technology</a></li>
+                                    <li><a ui-sref="science.polyiso">The Science of Roofing</a></li>
+                                    <li><a ui-sref="flat.membranes">Flat Roof Academy</a></li>
+                                    <li><a ui-sref="pitched.shingles">Pitched Roof Academy</a></li>
+                                </ul>
+                            </li>
+                            <li><a ui-sref="contact">Contact</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+            <div ui-view id="containerinner">
+                <div id="tagline"><h1>Integrity, Quality, Value and Service since 1985</h1></div>
+                <div class="clearfix"></div>
+                <div class="home-full-width">
+                    <img ng-src="resources/img/West-Liberty.jpg" alt="">
+                </div>
+                <div id="tagline"><h1>Evolution Roofing Systems, Houston, Texas</h1></div>
+                <div class="home-grid">
+                    <div class="homeGridItem" >
+                        <div class="titleArea">
+                            <h2>Commercial (flat) Roofs</h2>
+                        </div>
+                        <p>We helped establish the Houston Area guidelines for cool, efficient flat commercial roofs. Since our beginning, Evolution Roofing has provided building owners with quality roofing products, professional installation and prompt service.</p>
+                         <div class="center-horiz">
+                            <a ui-sref="flatsystems"><button type="button">More</button></a>
+                        </div>
+                        
+                    </div>
+                    <div class="homeGridItem" >
+                        <div class="titleArea">
+                            <h2>Residential (pitched) Roofs</h2>
+                        </div>
+                        <p>Making the right choice for your residential roofing contractor is essential to your peace of mind. We ensure that our work is done to your satisfaction, in a timely manner, and at a fair price. Evolution Roofing has been meeting these requirements for over 25 years.</p>
+                        <div class="center-horiz">
+                            <a ui-sref="pitchedsystems"><button type="button">More</button></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="newfooter">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <p class="slogan">The more you know about roofing, the better we look.</p>
+                        <p class="links">
+                        <a ui-sref="home">Home</a>
+                        <a ui-sref="pitched">Residential</a>
+                        <a ui-sref="flat">Commercial</a>
+                        <a ui-sref="contact">Contact</a>
+                        <a ui-sref="about.privacy">Privacy Policy</a>
+                        </p>
+                        <p class="copywrite">Copywrite 2016 Evolution Roofing. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-	</div>
-  <!--Vendors not included in dep.js file-->
-  <script src="vendors/foundation-5.5.2/js/foundation.min.js"></script>
-  <script src="vendors/foundation-5.5.2/js/foundation/foundation.clearing.js"></script>
-  <script src="vendors/foundation-5.5.2/js/foundation/foundation.reveal.js"></script>
-
-   <!--Custom JS-->
-  <script src="resources/js/myApp.js"></script>
-  <!--Partial Controlles-->
-  <script src="resources/js/controllers/flat-roof.ctrl.js"></script>
-  <script src="resources/js/controllers/pitched-roof.ctrl.js"></script>
-  <script src="resources/js/controllers/home.ctrl.js"></script>
-  <script src="resources/js/controllers/nav.ctrl.js"></script>
-  <script src="resources/js/controllers/projects.ctrl.js"></script>
-  <script src="resources/js/controllers/header.ctrl.js"></script>
-  <script src="resources/js/controllers/login.ctrl.js"></script>
-  <script src="resources/js/controllers/login.temp.js"></script>
-  <script src="resources/js/controllers/job.ctrl.js"></script>
-  <script src="resources/js/controllers/contact.ctrl.js"></script>
-  <script src="resources/js/controllers/drone.ctrl.js"></script>
-  <script src="resources/js/controllers/science.ctrl.js"></script>
-  
-  <!--Jobs-->
-  <script src="jobs/customers.jobs.ctrl.js"></script>
-  <script src="jobs/dealco/dealco.ctrl.js"></script>
-  <script src="jobs/royal-bellaire/royal-bellaire.ctrl.js"></script>
-  <script src="jobs/sovereign/sovereign.ctrl.js?v=3"></script>
-  <script src="jobs/townpark/townpark.ctrl.js?v=2"></script>
-  <script src="jobs/casa/casa.ctrl.js"></script>
-  <script src="jobs/liberty/vid.ctrl.js"></script>
-  <!--Services-->
-  <script src="resources/js/services/data.srvc.js"></script>
-
-  <!--Directives-->
-  <script src="resources/js/directives/gridImageBtn.dir.js"></script>
-  <script src="resources/js/directives/homePageItem.dir.js"></script>
-  <script src="resources/js/directives/imgWithCaption.dir.js"></script>
-  <script src="partials/science/academyClasses.dir.js"></script>
-
-  
-  
-
-  <script>
-    $(document).foundation();
-    $('a.custom-close-reveal-modal').click(function(){
-      $('#system5').foundation('reveal', 'close');
-    });
-    $('a.system6-close-reveal-modal').click(function(){
-      $('#system6').foundation('reveal', 'close');
-    });
-    $('a.system1-close-reveal-modal').click(function(){
-      $('#system1').foundation('reveal', 'close');
-    });
-  </script>
-</body>
+        <!--Vendors not included in dep.js file-->
+        <script src="vendors/foundation-5.5.2/js/foundation.min.js"></script>
+        <script src="vendors/foundation-5.5.2/js/foundation/foundation.clearing.js"></script>
+        <script src="vendors/foundation-5.5.2/js/foundation/foundation.reveal.js"></script>
+        <!--Custom JS-->
+        <script src="resources/js/myApp.js"></script>
+        <!--Partial Controlles-->
+        <script src="resources/js/controllers/flat-roof.ctrl.js"></script>
+        <script src="resources/js/controllers/home.ctrl.js"></script>
+        <script src="resources/js/controllers/header.ctrl.js"></script>
+        <script src="resources/js/controllers/login.ctrl.js"></script>
+        <script src="resources/js/controllers/login.temp.js"></script>
+        <script src="resources/js/controllers/job.ctrl.js"></script>
+        <script src="resources/js/controllers/contact.ctrl.js"></script>
+        <script src="resources/js/controllers/drone.ctrl.js"></script>
+        <!--Jobs-->
+        <script src="jobs/customers.jobs.ctrl.js"></script>
+        <script src="jobs/dealco/dealco.ctrl.js"></script>
+        <script src="jobs/royal-bellaire/royal-bellaire.ctrl.js"></script>
+        <script src="jobs/sovereign/sovereign.ctrl.js?v=3"></script>
+        <script src="jobs/townpark/townpark.ctrl.js?v=2"></script>
+        <script src="jobs/casa/casa.ctrl.js"></script>
+        <script src="jobs/liberty/vid.ctrl.js"></script>
+        <!--Services-->
+        <script src="resources/js/services/data.srvc.js"></script>
+        <!--Directives-->
+        <script src="resources/js/directives/gridImageBtn.dir.js"></script>
+        <script src="resources/js/directives/homePageItem.dir.js"></script>
+        <script src="resources/js/directives/imgWithCaption.dir.js"></script>
+        <script src="resources/js/directives/hrule.dir.js"></script>
+        <script>
+                                    var w = $(document).width();
+                                    if (w <= 699) {
+                                    document.location = "mobile.html";
+                                    }
+        </script>
+        <script>
+                                    $(document).foundation();
+                                    $('a.custom-close-reveal-modal').click(function(){
+                                    $('#system5').foundation('reveal', 'close');
+                                    });
+                                    $('a.system6-close-reveal-modal').click(function(){
+                                    $('#system6').foundation('reveal', 'close');
+                                    });
+                                    $('a.system1-close-reveal-modal').click(function(){
+                                    $('#system1').foundation('reveal', 'close');
+                                    });
+        </script>
+    </body>
 </html>
