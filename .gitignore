@@ -6,8 +6,6 @@ cgi-bin/
 *.log
 *.mp4
 *.mov
-vendors/
-jobs/
 *.psd
 
 

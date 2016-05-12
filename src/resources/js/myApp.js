@@ -208,7 +208,23 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('townpark.01', {
 			url: "/bldg01",
-			templateUrl:"jobs/townpark/shingles/01/01.html"
+			templateUrl:"jobs/townpark/shingles/01/bldg01.html"
+		})
+		.state('townpark.02', {
+			url: "/bldg02",
+			templateUrl:"jobs/townpark/shingles/02/bldg02.html"
+		})
+		.state('townpark.03', {
+			url: "/bldg03",
+			templateUrl:"jobs/townpark/shingles/03/bldg03.html"
+		})
+		.state('townpark.04', {
+			url: "/bldg04",
+			templateUrl:"jobs/townpark/shingles/04/bldg04.html"
+		})
+		.state('townpark.05', {
+			url: "/bldg05",
+			templateUrl:"jobs/townpark/shingles/05/bldg05.html"
 		})
 
 		.state('casagrande', {

@@ -1,0 +1,58 @@
+
+<div class="customer-page">
+	<div class="majorPageHeading">Sovereign Townhomes</div>
+	<div class="hrule"></div>
+	<div class="icon-buttons-container">
+		<button class="svg-doc-button svg-button" ng-click="changeSection('docs')"></button>
+		<button class="svg-img-button svg-button" ng-click="changeSection('imgs')"></button>
+		<button class="svg-vid-button svg-button" ng-click="changeSection('vids')"></button>
+	</div>
+	<div class="hrule"></div>
+	<div id="imgs" class="marginTop5px" ng-show="activeSection==='imgs'">
+		<h3>Still Images</h3>
+		<a href="#" data-reveal-id="img01" class="radius button">Skyview</a>
+	</div>
+	<div id="docs" class="marginTop5px" ng-show="activeSection==='docs'">
+		<h3>Documents</h3>
+		<a href="jobs/sovereign/docs/sovereign-map.pdf" class="radius button">Plot Map</a>
+		<a href="jobs/sovereign/docs/Sovereign-TownPark-Townhomes.pdf" class="radius button">Proposal</a>
+	</div>
+	<div id="vids" class="marginTop5px" ng-show="activeSection==='vids'">
+		<h3>Videos - Updated Oct 7, 2015</h3>
+		<div ng-controller="SovereignCtrl as controller" >
+		<div class="videoSelector">
+			<p class="singleLine">Select building from drop down.</p>
+			<select id="selectBldg" ng-model="selectedBldg" ng-options="c.label for c in bldgList" ng-change="selectBldg(selectedBldg)"></select>
+		</div>
+		
+		<h3><span class="boldFont">{{selectBldgNum}}</span></h3>
+		<div class="videogular-container">
+			<videogular vg-theme="controller.config.theme" vg-player-ready="controller.onPlayerReady($API)" >
+				<vg-media vg-src="controller.config.sources"
+							vg-tracks="controller.config.tracks">
+				</vg-media>
+				<vg-controls>
+					<vg-play-pause-button></vg-play-pause-button>
+					<vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+					<vg-scrub-bar>
+						<vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+					</vg-scrub-bar>
+					<vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+					<vg-fullscreen-button></vg-fullscreen-button>
+				</vg-controls>
+		 
+				<vg-overlay-play></vg-overlay-play>
+			</videogular>
+			</div>
+		</div>
+		<div class="hrule marginTop5px"></div>
+	</div>
+
+
+	<div id="img01" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+		<img src="jobs/sovereign/imgs/Sovereign-Skyview.jpg" alt="">
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>
+</div>
+
+
