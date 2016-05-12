@@ -204,8 +204,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 		.state('townpark', {
 			url: "/townpark",
-			templateUrl:"jobs/townpark/townpark.html",
-			controller:"CustomerJobCtrl"
+			templateUrl:"jobs/townpark/townpark.html"
+		})
+		.state('townpark.01', {
+			url: "/bldg01",
+			templateUrl:"jobs/townpark/shingles/01/01.html"
 		})
 
 		.state('casagrande', {
